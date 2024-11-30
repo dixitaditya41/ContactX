@@ -23,7 +23,7 @@ app.use(cookieParser());
 
 // CORS Middleware Configuration
 app.use(cors({
- origin: 'https://contact-x.netlify.app' || 'http://localhost:3000',
+ origin: 'https://contact-x-cyan.vercel.app' || 'http://localhost:3000',
   credentials: true,              
 }));
 
