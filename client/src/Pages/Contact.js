@@ -8,7 +8,7 @@ const Contact = () => {
  
   const fetchContacts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/contacts', {
+      const response = await axios.get('https://contactx-cdi6.onrender.com/api/contacts', {
         withCredentials: true,
       });
       setContacts(response.data);
