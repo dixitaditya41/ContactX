@@ -17,7 +17,7 @@ const Navbar=(props)=>{
             console.log("Token:", Cookies.get("jwt")); // Check if jwt is accessible
 
             const response = await axios.get(
-                "http://localhost:5000/api/auth/logout",
+                "https://contactx-cdi6.onrender.com/api/auth/logout",
                 { withCredentials: true }
                 
             );
