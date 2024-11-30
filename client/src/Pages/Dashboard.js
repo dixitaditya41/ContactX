@@ -41,12 +41,12 @@ function Dashboard() {
 
     try {
       if (isEditing) {
-        await axios.put(`http://localhost:5000/api/contacts/${editId}`, formData, {
+        await axios.put(`https://contactx-cdi6.onrender.com/api/contacts/${editId}`, formData, {
           withCredentials: true
         });
         toast.success("Contact updated successfully!");
       } else {
-        await axios.post("http://localhost:5000/api/contacts", formData, {
+        await axios.post("https://contactx-cdi6.onrender.com/api/contacts", formData, {
           withCredentials: true
         });
         toast.success("Contact added successfully!");
@@ -64,7 +64,7 @@ function Dashboard() {
   // Handle delete
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/contacts/${id}`, {
+      await axios.delete(`https://contactx-cdi6.onrender.com/api/contacts/${id}`, {
         withCredentials: true
       });
       toast.success("Contact deleted successfully!");
